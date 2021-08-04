@@ -1,0 +1,670 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed'), url('MYRIADPRO-COND.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed Italic'), url('MYRIADPRO-CONDIT.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Light'), url('MyriadPro-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Semibold'), url('MYRIADPRO-SEMIBOLD.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Semibold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Semibold Italic'), url('MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed'), url('MYRIADPRO-BOLDCOND.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold'), url('MYRIADPRO-BOLD.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Italic'), url('MYRIADPRO-BOLDIT.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Myriad Pro Bold Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed Italic'), url('MYRIADPRO-BOLDCONDIT.woff') format('woff');
+  }
+
+  /* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/open-sans-v20-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v20-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v20-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/open-sans-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v20-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/open-sans-v20-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v20-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v20-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v20-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+ 
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  background-color: black;  
+  font: 300 15px/1.5 "Myriad Pro";
+}
+
+ul, li, a, p, figcaption{
+  font: 400 15px/1.5 "Open sans",sans-serif;
+}
+/* Header */
+header{ 
+  z-index: 100; 
+  position:absolute;
+}
+
+nav{
+  background: rgb(25,25,25);
+  height: 66px;
+  width: 100vw;   
+  position: fixed; 
+  z-index: 10;  
+}
+
+/* Logotipo */
+nav a div{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3%;
+  margin: auto;
+  height: 27px;
+  display: flex;
+  align-items: center;
+}
+
+nav a img{
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+nav a div p{
+  font-size: 1.1rem;
+  color: white;
+  margin-left: 8px;
+}
+
+
+
+nav ul{
+  float: right;
+  margin-right: 3%;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 4.1rem;
+  margin: 0 8px;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+}
+
+nav ul li a{
+  opacity: 0.5;
+  padding: 4px 10px;
+  color:white;
+}
+
+.activo{
+  opacity: 1;
+}
+
+nav ul li a:hover{
+  border-bottom: 1px solid white ;
+  opacity: 1;
+}
+
+/* Menú responsive */
+.menu-ham{
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-ham span{
+  background-color: white;
+  display: block;
+  height: 4px;
+  width: 28px;
+  margin: 5px auto;
+  border-radius: 1px;
+}
+
+/* Animaciones menú responsive */
+.br-1.animation{
+  transform: rotate(-45deg) translate(-5px, 7.8px);
+  transition: 0.4s;
+}
+
+.br-2.animation{
+  opacity: 0; 
+}
+
+.br-3.animation{
+  transform: rotate(45deg) translate(-5px, -7.8px);
+  transition: 0.4s;
+}
+
+/* media queries header*/
+@media (max-width: 1100px){
+
+  nav a div {
+    left: 4%;
+  }
+  }
+@media (max-width: 768px){
+
+  .menu-ham{
+    display: block;
+    position: absolute;
+    right: 5.5%;
+    top: 0;
+    bottom: 0;
+    margin: auto; 
+  }
+  nav a div {
+    left: 3%;
+  }
+
+  nav a img{
+    left: 5.5%;
+    padding-left: 20%;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 66px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    font-size: 1rem;
+  }
+
+  nav ul.show{
+    background-color: rgba(25,25,25,0.95);
+    left: 0;
+  }
+
+  nav ul li{
+    line-height: 2rem;
+    text-align: center;
+    display: block;
+    margin: 26px 0;
+    border-bottom: 2px solid rgba(160,160,160,0.3);
+    padding-bottom: 20px;
+  }
+
+  nav ul li a{
+    opacity: 1;
+  }
+}
+
+
+
+/*main*/
+
+body {
+  font: 300 0px/1.4 "Myriad Pro";
+  margin: 0;
+  padding: 0;
+  font-weight: 0;
+}
+main {
+ padding-top:66px;
+}
+
+
+main h1, main h3, main p{
+  padding-right: 7%;
+  padding-left: 8%;
+  width: 75%;
+  font-weight: 600;
+}
+
+main h1 {
+  padding-top: 8%;
+  font-size: 1.7rem;
+}
+
+main h3 {
+  padding-top: 1%;
+  padding-bottom:2%;
+  font-size: 1.2rem;
+}
+
+main p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+p:last-child{
+  padding-top: 2%;
+}
+
+main img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.flexbox-container > div:first-child {
+  background: black;
+  position: fixed;
+  width: 40%;
+  color: white;
+  z-index: 10;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 4%;
+  margin-top: 2.5%;
+}
+
+.flex-item {
+  background: white;
+  width: 16.5vw;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin: 1.5%;
+  margin-bottom: 2%;
+}
+
+
+
+.flexbox-container > div:last-child {
+  background: white;
+  width: 60%;
+  position: relative;
+  padding-left: 40%;
+  overflow: hidden;
+}
+
+
+@media (max-width: 992px){
+  .flex-container {
+    margin-top: 5%;
+}
+  .flex-item {
+    width: 20vw;
+  }
+  .flexbox-container > div:first-child {
+    width: 50%;
+}
+.flexbox-container > div:last-child {
+  width: 50%;
+  padding-left: 50%;
+}
+}
+@media (max-width: 768px){
+  main h1 {
+    padding-top: 6%;
+}
+  main h1, main h3, main p {
+    padding-left: 5.5%;
+    padding-right: 7%;
+
+  }
+
+  main h3 {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 1.2rem;
+  }
+
+  main p {
+    font-size: 1rem;
+    width: 82%;
+  }
+  
+  .flexbox-container {
+    display: block;
+  }
+  
+  .flexbox-container > div:first-child {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 7%;
+  }
+  
+  .flexbox-container > div:last-child {
+    width: 100%;
+    padding-left: 0; 
+  }
+
+  .flex-item {
+    width: 28vw;
+  }
+
+  .flex-item:first-child,
+  .flex-item:nth-child(0n+2),
+  .flex-item:nth-child(0n+3){
+  margin-top: 1%;
+  }
+
+}
+
+@media (max-width: 576px){
+  .flexbox-container > div:first-child, .recomendations-recipe h1 {
+    padding-left:2.3%;
+  }
+
+spam {
+ 
+display:none;}
+main p {
+ 
+font-size:0.85rem;
+width:83%;
+hyphens: auto;}
+
+  .flex-container {
+ 
+    margin-bottom: 5%;
+}
+  .flexbox-container > div:first-child {
+   width:auto;
+    padding-bottom: 8%;
+  }
+
+  .flex-item,
+  .flex-item:nth-child(0n+3){
+    width: 43vw;
+    margin-top: 4%;
+  }
+  .flex-item:first-child,
+.flex-item:nth-child(0n+2)
+ {
+  margin-top: 2%;
+}
+}
+
+/*recetas recomendadas*/
+.recomendations-recipe{
+  color:white;
+}
+.recomendations-recipe h1 {
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  width: 100%;
+  background: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.container-recomendations {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.recomendations-object{
+  display: inline-block;
+  position: relative;
+}
+
+.recomendations-object:hover{
+  opacity:0.8;
+}
+
+.recomendations-object > img {
+  width: 40vw;
+  object-fit: cover;
+  height:45vh;
+}
+
+/* media queries main detalles de una receta*/
+@media (max-width: 992px){
+
+  .recomendations-object > img {
+    width: 35vw;
+  }
+  }
+@media (max-width: 768px){
+
+.recomendations-object > img {
+  width: 60vw;
+}
+}
+@media (max-width: 567px){
+
+  .recomendations-recipe h1 {
+    padding-top: 3.5%;
+    padding-bottom: 3%;
+    padding-left:6%;
+}
+
+.recomendations-object > img {
+  width: 80vw;
+  height: 35vh;
+}
+}
+/* footer */
+footer{
+  background: rgb(25,25,25);
+  min-height: 66px;
+  width: 100vw;
+  z-index: 11;
+  position: relative;
+}
+
+footer > div{
+  padding-left:2.5%;
+  padding-right:2.5%;
+  margin: 0 auto;
+}
+
+.footer-left ul li {
+  line-height: 4.1rem;
+  font-size: 1.05rem;
+  display:inline-block;
+}
+
+.footer-left ul li a{
+  color: white;
+  opacity:0.5;
+}
+
+.footer-left ul li a:hover{
+  color:white;
+  opacity:1;
+}
+
+.footer-left ul li::after {
+  content: "|";
+  margin-left:10px;
+  margin-right:6px;
+  color: #8f9296;
+}
+
+.footer-left ul li:last-child::after {
+  content: "";
+}
+
+.footer-right {
+  float: right;   
+  color: white;
+}
+
+.footer-right a {
+  display: inline-flex;
+  color: white;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 1px;
+  margin-left: 9px;
+  transition: transform 0.3s;
+  margin-top:15.5px;
+}
+
+.footer-right a:hover{
+  transform: scale(1.25); 
+}
+
+.footer-right a:active{
+  background-color: black;
+}
+
+.footer-right img{
+  width: 70%;
+  height: 70%;
+}
+
+/* media queries footer */
+@media (max-width: 1100px){
+
+  footer > div {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  }
+@media (max-width: 768px){
+
+  footer {
+    height: 111.5px;
+    padding-bottom: 24px;
+    padding-top: 12px;
+    text-align: center;
+  }
+  .footer-left ul li{
+    line-height: 2rem;
+  }
+
+  .footer-right {
+    float: none;
+    padding-bottom: 4%;
+  }
+}
+
+@media (max-width: 576px){
+  .footer-left ul li {
+    line-height: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
